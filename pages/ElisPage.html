@@ -14,10 +14,16 @@ function articleLink(){
     max-width:300px;
 }
 
+.container img {
+    width: 100%;
+    height: auto;
+}
+
 .container .btn_a {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 </style>
@@ -59,7 +65,7 @@ function articleLink(){
 
 </h2>
 
-<p>
+<p style="color: aliceblue;">
 
         This was a very short article. It was about the UFO hearings that NASA had recently, 
         and outlined that NASA has not confirmed much of anything, 
@@ -80,7 +86,7 @@ function articleLink(){
 
         <div class="container">
             <img src="../images/alienpicture.jpg"; style="width:100%;">
-            <button type="btn_a"; onclick="articleLink()">Click to see the Article</button>
+            <button class="btn_a" onclick="articleLink()">Click to see the Article</button>
         </div>
         
 <p>    
