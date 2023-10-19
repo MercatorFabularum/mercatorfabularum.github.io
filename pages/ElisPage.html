@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <script>
-function testFun(){
-    src = "https://mercatorfabularum.github.io/pages/homepage.html"
+function articleLink(){
+    window.location.assign("https://mercatorfabularum.github.io/pages/homepage.html")
 }
-    
 </script>
+<style>
 
+.container {
+    position: relative;
+    width: 100%;
+    max-width:300px;
+}
+
+.container .btn_a {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+</style>
 </head>
 
 <div class="navbar" style="
@@ -47,11 +59,7 @@ function testFun(){
 
 </h2>
 
-<p style="
-    font-family: Garamond; 
-    color:aliceblue;
-    width:60%;
-    ">
+<p>
 
         This was a very short article. It was about the UFO hearings that NASA had recently, 
         and outlined that NASA has not confirmed much of anything, 
@@ -68,12 +76,14 @@ function testFun(){
         This, and I also wanted to see what a British view of the US would be like. 
         But mainly, I was trying to simply find an article that I could read for free; 
         without having to subscribe to The Telegraph.<br>
+</p>
 
-        <button type="button a"; style="padding: 10px;" onclick="testFun()">
-            <img src="../images/alienpicture.jpg">
-            Click to see the Article
-        </button>
+        <div class="container">
+            <img src="../images/alienpicture.jpg"; style="width:100%;">
+            <button type="btn_a"; onclick="articleLink()">Click to see the Article</button>
+        </div>
         
+<p>    
         The main critique I have is for The Telegraph’s website itself. 
         Both on the computer and phone it is an ad-ridden mess. 
         When trying to find an article to read I was repeatedly stonewalled by the site 
